@@ -1,0 +1,80 @@
+// DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
+
+// ignore_for_file: constant_identifier_names
+
+abstract class  LocaleKeys {
+  static const Skip = 'Skip';
+  static const Start_Now = 'Start Now';
+  static const Next = 'Next';
+  static const Onboarding1 = 'Onboarding1';
+  static const Onboarding2 = 'Onboarding2';
+  static const Onboarding3 = 'Onboarding3';
+  static const OnboardingSubtitle2 = 'OnboardingSubtitle2';
+  static const OnboardingSubtitle1 = 'OnboardingSubtitle1';
+  static const login = 'login';
+  static const enter_your_phone = 'enter_your_phone';
+  static const OTP = 'OTP';
+  static const enter_the_verification_code_sent_to_you = 'Enter the verification code sent to you';
+  static const The_code_was_not_sent = 'The code was not sent';
+  static const Send_again = 'Send again';
+  static const confirm = 'confirm';
+  static const address = 'address';
+  static const address_details = 'address_details';
+  static const villa_number = 'villa_number';
+  static const zone = 'zone';
+  static const cart = 'cart';
+  static const kilo = 'kilo';
+  static const rs = 'rs';
+  static const pay = 'pay';
+  static const favorites = 'favorites';
+  static const cheep = 'cheep';
+  static const search = 'search';
+  static const offers = 'offers';
+  static const categories = 'categories';
+  static const Most_requested_products = 'Most_requested_products';
+  static const details = 'details';
+  static const pay_now = 'pay_now';
+  static const add_to_cart = 'add_to_cart';
+  static const share = 'share';
+  static const product_details = 'product_details';
+  static const home = 'home';
+  static const my_account = 'my_account';
+  static const enter_your_name = 'enter_your_name';
+  static const save = 'save';
+  static const personal_account = 'personal_account';
+  static const personal_profile = 'personal_profile';
+  static const addresses = 'addresses';
+  static const carts = 'carts';
+  static const payment_method = 'payment_method';
+  static const common_questions = 'common_questions';
+  static const delete_account = 'delete_account';
+  static const logout = 'logout';
+  static const add_new_address = 'add_new_address';
+  static const show_details = 'show_details';
+  static const do_you_want_to_delete_your_account = 'do_you_want_to_delete_your_account';
+  static const yse = 'yse';
+  static const no = 'no';
+  static const language = 'language';
+  static const change_language = 'change_language';
+  static const enter_your_password = 'enter_your_password';
+  static const do_you_forget_your_password = 'do_you_forget_your_password';
+  static const Enter_your_email_to_send_otp = 'Enter your email to send otp';
+  static const enter_your_email = 'enter_your_email';
+  static const email = 'email';
+  static const send = 'send';
+  static const password = 'password';
+  static const signUp = 'signUp';
+  static const have_an_account = 'have_an_account';
+  static const confirm_password = 'confirm_password';
+  static const change_password = 'change_password';
+  static const requiredField = 'requiredField';
+  static const requiredPhone = 'requiredPhone';
+  static const phoneDoseNotMatch = 'phoneDoseNotMatch';
+  static const requiredEmail = 'requiredEmail';
+  static const wrongEmailValidation = 'wrongEmailValidation';
+  static const requiredPassword = 'requiredPassword';
+  static const smallPassword = 'smallPassword';
+  static const confirmPassword = 'confirmPassword';
+  static const passwordNotMatch = 'passwordNotMatch';
+
+}
