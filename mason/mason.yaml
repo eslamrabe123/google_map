@@ -1,0 +1,21 @@
+bricks:
+  readme:
+    git:
+      url: git@github.com:neop-planet/app-base-code.git
+      path: bricks/readme
+  assets:
+    git:
+      url: git@github.com:neop-planet/app-base-code.git
+      path: bricks/assets
+  project_template:
+    git:
+      url: git@github.com:neop-planet/app-base-code.git
+      path: bricks/project_template
+  feature:
+    git:
+      url: git@github.com:neop-planet/app-base-code.git
+      path: bricks/feature
+  auth:
+    git:
+      url: git@github.com:neop-planet/app-base-code.git
+      path: bricks/auth
