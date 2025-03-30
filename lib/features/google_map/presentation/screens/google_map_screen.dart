@@ -26,7 +26,8 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
             body: SafeArea(
               child: Column(
                 children: [
-                  Text("GoogleMapScreen"),
+                  CustomTextWidget("GoogleMapScreen"),
+                  // AIzaSyBGNgsJDUY6rwNB6zVzHbIfel_BHqJuyEI?
                 ],
               ),
             ),

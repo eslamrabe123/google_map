@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
         },
         theme: ThemesManger.appLightTheme,
         darkTheme: ThemesManger.appDarkTheme,
-        initialRoute: '/',
+        initialRoute: Routes.googleMap,
       ),
     );
   }
