@@ -23,14 +23,14 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
       create: (context) => GoogleMapCubit()..loadMapStyle(context),
       child: BlocConsumer<GoogleMapCubit, GoogleMapStates>(
         listener: (context, state) {
-          if (state is GoogleMapError) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: CustomTextWidget(state.error)),
-            );
-          }
+          if (state is GoogleMapError) Alerts.snack(text: state.error, state: SnackState.failed);
         },
         builder: (context, state) {
-          if (state is GoogleMapStyleLoaded) {
+          if (state is GoogleMapLoading || state is GoogleMapInitial) {
+            return Scaffold(
+              body: const Center(child: CircularProgressIndicator()),
+            );
+          } else if (state is GoogleMapStyleLoaded) {
             return Scaffold(
               body: GoogleMap(
                 style: state.style,
@@ -40,17 +40,17 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
                 },
               ),
             );
-          } else if (state is GoogleMapLoading || state is GoogleMapInitial) {
-            return  Scaffold(
-              body: Center(child: Lottie.asset('assets/json/loading.json')),
-            );
           } else {
-            return  Container();
+            return Container(
+              width: double.infinity,
+              height: double.infinity,
+              child: const Center(
+                child: CustomTextWidget('Unknown Error'),
+              ),
+            );
           }
         },
       ),
     );
   }
-
-
 }

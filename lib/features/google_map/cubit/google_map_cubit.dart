@@ -15,12 +15,12 @@ class GoogleMapCubit extends Cubit<GoogleMapStates> {
 
   loadMapStyle(BuildContext context) async {
     emit(GoogleMapLoading());
-    final style = await DefaultAssetBundle.of(context).loadString('assets/json/map_style.json');
+    final style = await DefaultAssetBundle.of(context)
+        .loadString('assets/json/map_style.json');
     if (style.isEmpty) {
       emit(GoogleMapError('Error loading map style'));
     } else {
       emit(GoogleMapStyleLoaded(style));
     }
   }
-
 }
