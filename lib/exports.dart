@@ -26,10 +26,13 @@ export 'package:google_map/features/google_map/cubit/google_map_states.dart';
 export 'package:google_map/core/utiles/bloc_observer.dart';
 export 'package:lottie/lottie.dart';
 export 'package:permission_handler/permission_handler.dart';
+export 'package:google_map/features/google_map/presentation/widgets/custom_google_map_widget.dart';
+export 'package:google_map/features/google_map/presentation/widgets/error_widget.dart';
 export 'package:pinput/pinput.dart';
 export 'package:pretty_dio_logger/pretty_dio_logger.dart';
 export 'package:restart_app/restart_app.dart';
 export 'package:shared_preferences/shared_preferences.dart';
+export 'package:google_map/features/google_map/presentation/widgets/customLoadingWidget.dart';
 export 'package:shimmer/shimmer.dart';
 export 'package:url_launcher/url_launcher.dart';
 

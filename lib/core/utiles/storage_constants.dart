@@ -6,4 +6,5 @@ class StorageConstants {
   static const String themeMode = 'themeMode';
   static const String language = 'language';
   static const String loggedIn = 'loggedIn';
+  static const String unExpectedError = 'unExpectedError';
 }

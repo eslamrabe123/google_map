@@ -2,11 +2,7 @@ abstract class GoogleMapStates {}
 
 class GoogleMapInitial extends GoogleMapStates {}
 
-class GoogleMapStyleLoaded extends GoogleMapStates {
-  final String style;
-
-  GoogleMapStyleLoaded(this.style);
-}
+class GoogleMapStyleLoaded extends GoogleMapStates {}
 
 class GoogleMapError extends GoogleMapStates {
   final String error;
@@ -15,3 +11,7 @@ class GoogleMapError extends GoogleMapStates {
 }
 
 class GoogleMapLoading extends GoogleMapStates {}
+
+class GoogleMapMarkersLoaded extends GoogleMapStates {}
+
+class GoogleMapBottomSheetVisibilityChanged extends GoogleMapStates {}
