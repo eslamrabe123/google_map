@@ -23,6 +23,7 @@ export 'package:internet_connection_checker/internet_connection_checker.dart';
 export 'package:google_map/features/google_map/domain/repository/repository.dart';
 export 'package:google_map/features/google_map/cubit/google_map_cubit.dart';
 export 'package:google_map/features/google_map/cubit/google_map_states.dart';
+export 'package:google_map/core/utiles/bloc_observer.dart';
 export 'package:lottie/lottie.dart';
 export 'package:permission_handler/permission_handler.dart';
 export 'package:pinput/pinput.dart';

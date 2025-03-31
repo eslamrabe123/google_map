@@ -7,7 +7,20 @@ import 'google_map_states.dart';
 
 class GoogleMapCubit extends Cubit<GoogleMapStates> {
   GoogleMapCubit() : super(GoogleMapInitial());
+
   static GoogleMapCubit get(context) => BlocProvider.of(context);
-  
- GoogleMapRepository google_mapRepository =  GoogleMapRepository(locator<DioService>());
+
+  GoogleMapRepository google_mapRepository =
+      GoogleMapRepository(locator<DioService>());
+
+  loadMapStyle(BuildContext context) async {
+    emit(GoogleMapLoading());
+    final style = await DefaultAssetBundle.of(context).loadString('assets/json/map_style.json');
+    if (style.isEmpty) {
+      emit(GoogleMapError('Error loading map style'));
+    } else {
+      emit(GoogleMapStyleLoaded(style));
+    }
+  }
+
 }

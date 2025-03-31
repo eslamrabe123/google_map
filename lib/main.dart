@@ -1,13 +1,10 @@
 import "package:flutter/material.dart";
-
 import "exports.dart";
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
   await setupLocator();
-
-  // bloc observer
   Bloc.observer = MyBlocObserver();
 
   runApp(
@@ -31,7 +28,6 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
-        title: '',
         themeAnimationDuration: const Duration(milliseconds: 700),
         themeAnimationCurve: Curves.easeInOutCubic,
         navigatorKey: CustomNavigator.navigatorState,
@@ -56,43 +52,5 @@ class MyApp extends StatelessWidget {
         initialRoute: Routes.googleMap,
       ),
     );
-  }
-}
-
-class MyBlocObserver extends BlocObserver {
-  @override
-  void onCreate(BlocBase bloc) {
-    super.onCreate(bloc);
-    'onCreate -- ${bloc.runtimeType}'.logIfDebug();
-  }
-
-  @override
-  void onEvent(Bloc bloc, Object? event) {
-    super.onEvent(bloc, event);
-    'onEvent -- ${bloc.runtimeType} -- $event'.logIfDebug();
-  }
-
-  @override
-  void onChange(BlocBase bloc, Change change) {
-    super.onChange(bloc, change);
-    'onChange -- ${bloc.runtimeType} -- $change'.logIfDebug();
-  }
-
-  @override
-  void onTransition(Bloc bloc, Transition transition) {
-    super.onTransition(bloc, transition);
-    'onTransition -- ${bloc.runtimeType} -- $transition'.logIfDebug();
-  }
-
-  @override
-  void onError(BlocBase bloc, Object error, StackTrace stackTrace) {
-    'onError -- ${bloc.runtimeType} -- $error -- $stackTrace'.logIfDebug();
-    super.onError(bloc, error, stackTrace);
-  }
-
-  @override
-  void onClose(BlocBase bloc) {
-    'onClose -- ${bloc.runtimeType}'.logIfDebug();
-    super.onClose(bloc);
   }
 }
